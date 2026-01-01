@@ -1,0 +1,128 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "done": "Done",
+    "error": "An error occurred",
+    "retry": "Try again"
+  },
+  "nav": {
+    "matches": "Matches",
+    "chat": "Chat",
+    "profile": "Profile"
+  },
+  "auth": {
+    "phoneTitle": "Enter your phone number",
+    "phoneDescription": "We'll send you a verification code via SMS",
+    "verifyTitle": "Verify your code",
+    "verifyDescription": "Enter the code we sent to",
+    "sendCode": "Send code",
+    "verify": "Verify",
+    "resendCode": "Resend code",
+    "ageTitle": "Confirm your age",
+    "ageDescription": "You must be at least 20 years old to use Maak",
+    "ageConfirm": "I am 20 years old or older"
+  },
+  "matches": {
+    "title": "Today's matches",
+    "noMatches": "No matches today",
+    "expiresIn": "Expires in",
+    "like": "Like",
+    "pass": "Pass",
+    "mutualMatch": "It's a match!",
+    "matchScore": "{{score}}% match",
+    "similar": "Similar",
+    "complementary": "Complementary"
+  },
+  "chat": {
+    "newMatch": "New match! 🎉",
+    "chooseIcebreaker": "Choose a conversation starter or write your own message",
+    "typeMessage": "Type a message...",
+    "noMessages": "No messages yet"
+  },
+  "profile": {
+    "title": "My Profile",
+    "my_profile": "My Profile",
+    "edit_profile": "Edit Profile",
+    "editProfile": "Edit profile",
+    "displayName": "Display name",
+    "bio": "Bio",
+    "photos": "Photos",
+    "addPhoto": "Add photo",
+    "completion": "{{percent}}% complete",
+    "settings": "Settings",
+    "language": "Language",
+    "notifications": "Notifications",
+    "privacy": "Privacy",
+    "logout": "Log out"
+  },
+  "settings": {
+    "title": "Settings",
+    "account": "Account",
+    "language": "Language",
+    "notifications": "Notifications",
+    "privacy": "Privacy",
+    "manage": "Manage",
+    "view": "View",
+    "achievements": "Achievements",
+    "personality_test": "Take personality test",
+    "start": "Start",
+    "logout": "Log out",
+    "delete_account": "Delete account",
+    "delete_account_title": "Delete your account",
+    "delete_account_description": "Are you sure you want to delete your account? All your data will be permanently removed. This action cannot be undone.",
+    "delete_account_confirm": "Yes, delete my account",
+    "deleting": "Deleting..."
+  },
+  "personality": {
+    "testTitle": "Personality Test",
+    "testDescription": "Answer the questions to find your archetype",
+    "question": "Question {{current}} of {{total}}",
+    "results": "Your Results",
+    "archetype": "Your Archetype",
+    "diplomat": "Diplomat",
+    "strategist": "Strategist",
+    "builder": "Builder",
+    "explorer": "Explorer"
+  },
+  "premium": {
+    "title": "Premium",
+    "upgrade": "Upgrade to Premium",
+    "benefits": "Benefits",
+    "unlimitedMatches": "Unlimited matches",
+    "advancedFilters": "Advanced filters",
+    "readReceipts": "Read receipts",
+    "prioritySupport": "Priority support",
+    "subscribe": "Subscribe"
+  },
+  "achievements": {
+    "title": "Achievements",
+    "profileComplete": "Profile Complete",
+    "firstMatch": "First Match",
+    "firstMessage": "First Message",
+    "weekStreak": "7 Day Streak",
+    "photosAdded": "Photos Added"
+  },
+  "gdpr": {
+    "welcome": "Welcome to Maak",
+    "privacy": "We care about your privacy",
+    "acceptAll": "Accept all",
+    "customize": "Customize settings",
+    "necessary": "Necessary cookies",
+    "analytics": "Analytics",
+    "marketing": "Marketing",
+    "personalization": "Personalization"
+  },
+  "privacy": {
+    "title": "Privacy",
+    "description": "Choose what is shown to your matches",
+    "showAge": "Show my age",
+    "showJob": "Show my job",
+    "showEducation": "Show my education",
+    "showLastName": "Show my last name"
+  }
+}
