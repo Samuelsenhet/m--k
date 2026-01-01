@@ -4,6 +4,23 @@
     "outDir": "dist",
     "strict": true,
     "lib": ["esnext"],
-    "esModuleInterop": true
-  }
+    "esModuleInterop": true,
+    "jsx": "react-native",
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*", "server/**/*"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "App.tsx",
+    "src/components/**/*",
+    "src/screens/**/*",
+    "src/navigation/**/*"
+  ]
 }

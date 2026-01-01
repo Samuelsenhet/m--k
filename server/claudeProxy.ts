@@ -36,10 +36,10 @@ app.post('/api/generate-icebreakers', async (req, res) => {
       headers: { 'Content-Type': 'application/json', 'X-API-Key': ANTHROPIC_KEY },
       body: JSON.stringify(body),
     });
-    const json = await r.json();
+    const json = await r.json() as { completion?: string; text?: string };
     const text = json?.completion ?? json?.text ?? JSON.stringify(json);
-    const lines = text.split(/\n+/).map(l => l.replace(/^[0-9\.\)\-\s]+/, '').trim()).filter(Boolean);
-    return res.json({ icebreakers: lines.slice(0, count).map(t => ({ text: t })) });
+    const lines = text.split(/\n+/).map((l: string) => l.replace(/^[0-9\.\)\-\s]+/, '').trim()).filter(Boolean);
+    return res.json({ icebreakers: lines.slice(0, count).map((t: string) => ({ text: t })) });
   } catch (err: any) {
     return res.status(500).json({ error: err?.message ?? String(err) });
   }
