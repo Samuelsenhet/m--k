@@ -37,7 +37,25 @@ Language: Swedish-focused UX and prompts; code is TypeScript.
 npm install
 ```
 
-2) If you plan to run the mobile UI with Expo, install/expose required native libs
+2) Environment variables
+
+Copy or create `.env` (see `.env.example`) with at least:
+
+```
+DATABASE_URL=postgresql://user:password@localhost:5432/maak?schema=public
+ANTHROPIC_API_KEY=your_anthropic_key
+EXPO_PUBLIC_SUPABASE_URL=your_supabase_url
+EXPO_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+EXPO_PUBLIC_ANTHROPIC_API_KEY=your_anthropic_key
+```
+
+3) Generate Prisma client
+
+```bash
+npx prisma generate
+```
+
+4) If you plan to run the mobile UI with Expo, install/expose required native libs
 
 ```bash
 # Optional: install Expo CLI
@@ -50,21 +68,23 @@ npm install @react-navigation/native @react-navigation/native-stack react-native
 npx expo install react-native-gesture-handler react-native-reanimated
 ```
 
-3) Environment variables
-
-Copy or create `.env` (see `.env.example`) with at least:
-
-```
-EXPO_PUBLIC_SUPABASE_URL=your_supabase_url
-EXPO_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-EXPO_PUBLIC_ANTHROPIC_API_KEY=your_anthropic_key
-DATABASE_URL=postgresql://...
-```
-
-4) Start the app (Expo)
+5) Start the app (Expo)
 
 ```bash
 expo start
+```
+
+Or run the backend services:
+
+```bash
+# Run the Node.js backend
+npm run dev
+
+# Run the MCP server
+npm run start:mcp
+
+# Run the Claude proxy server
+ts-node server/claudeProxy.ts
 ```
 
 --
