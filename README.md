@@ -1,3 +1,0 @@
-# Your Learning App Builder
-
-Welcome to the Your Learning App Builder repository! This project provides ...
